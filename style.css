@@ -28,6 +28,7 @@ nav span{
     font-size: 40px;
     font-weight: 600;
     color: #001871;
+    cursor: pointer;
 }
 
 nav ul li{
@@ -39,6 +40,7 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     color: #001871;
+    transition: color .1s;
 }
 
 nav ul li a:hover{
@@ -56,13 +58,8 @@ nav ul li a:hover{
     margin-bottom: 20px;
 }
 
-/* THIS IS HOW I MADE THE TEXT BLUE AND RED */
 .info span{
-    background-image: linear-gradient(to left, red,#001871 60%, red);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: rgb(237, 72, 43);
 }
 
 .info p{
@@ -78,4 +75,45 @@ button{
     border-radius: 4px;
     background-color: #001871;
     color: #fff;
+    cursor: pointer;
+}
+
+.img-box{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.img-box img{
+    height: 80%;
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.img-box:hover .back-img{
+    bottom: 40px;
+}
+
+.img-box:hover .main-img{
+    left:54%;
+}
+.social-links{
+    margin-left: 8%;
+    margin-top: 100px;
+}
+
+.social-links a{
+    font-size: 30px;
+    color:#606163;
+    margin-right: 20px;
+    transition: color .1s;
+}
+
+.social-links a:hover{
+    color: red;
 }
