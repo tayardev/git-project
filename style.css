@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 *{
     margin:0;
     padding: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .hero{
@@ -21,15 +24,10 @@ nav{
     justify-content: space-between;
 }
 
-/* WITH THIS TRICK I MAKE THE TEXT BLUE AND RED  */
 nav span{
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 600;
-    background-image: linear-gradient(to left, red, blue);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: #001871;
 }
 
 nav ul li{
@@ -40,9 +38,44 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
-    color: blue;
+    color: #001871;
 }
 
 nav ul li a:hover{
     color: red;
+}
+
+.info{
+    margin-left: 8%;
+    margin-top: 15%;
+}
+
+.info h1{
+    font-size: 60px;
+    color: #212121;
+    margin-bottom: 20px;
+}
+
+/* THIS IS HOW I MADE THE TEXT BLUE AND RED */
+.info span{
+    background-image: linear-gradient(to left, red,#001871 60%, red);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.info p{
+    color:666;
+    line-height: 28px;
+    margin-bottom: 1.5rem;
+}
+
+button{
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    background-color: #001871;
+    color: #fff;
 }
