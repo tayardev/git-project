@@ -29,6 +29,7 @@
           <li><a href="#">PORTFOLIO</a></li>
           <li><a href="#">SERVICES</a></li>
         </ul>
+        <img src="moon.png" id="icon" />
       </nav>
 
       <div class="info">
@@ -53,5 +54,18 @@
         <a href="#"><i class="fa fa-github"></i></a>
       </div>
     </div>
+
+    <script>
+      var icon = document.getElementById("icon");
+
+      icon.onclick = function () {
+        document.body.classList.toggle("dark-theme");
+        if (document.body.classList.contains("dark-theme")) {
+          icon.src = "sun.png";
+        } else {
+          icon.src = "moon.png";
+        }
+      };
+    </script>
   </body>
 </html>
