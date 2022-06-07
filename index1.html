@@ -75,10 +75,39 @@
         </div>
 
         <div class="sidebar">
-          <img src="img/photo_2022-06-07_18-31-49.jpg" alt="up arrow" />
-          <img src="img/photo_2022-06-07_18-31-54.jpg" alt="down arrow" />
+          <img
+            src="img/photo_2022-06-07_18-31-49.jpg"
+            alt="up arrow"
+            id="uparrow"
+          />
+          <img
+            src="img/photo_2022-06-07_18-31-54.jpg"
+            alt="down arrow"
+            id="downarrow"
+          />
         </div>
       </div>
     </div>
+
+    <script>
+      var slide = document.getElementById("slide");
+      var upArrow = document.getElementById("uparrow");
+      var downArrow = document.getElementById("downarrow");
+
+      let x = 0;
+
+      upArrow.onclick = function () {
+        if (x > "-900") {
+          x = x - 300;
+          slide.style.top = x + "px";
+        }
+      };
+      downArrow.onclick = function () {
+        if (x < 0) {
+          x = x + 300;
+          slide.style.top = x + "px";
+        }
+      };
+    </script>
   </body>
 </html>
