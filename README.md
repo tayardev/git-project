@@ -1,6 +1,6 @@
 Hello,
 
-I will upload my practices projects from various Youtube channels
-such as easy tutorials and etc.
+I will upload my practices projects with HTML, CSS and JavaScript from various Youtube channels
+like tutorials.
 
 for now, peace.
