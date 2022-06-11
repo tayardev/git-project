@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
 	margin:0;
 	padding:0;
@@ -68,3 +69,75 @@ button{
 button:hover{
 	background:rgba(102,181,85,1);
 }
+=======
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family:sans-serif;
+}
+
+.contact-box{
+	display:flex;
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform:translate(-50%, -50%);
+}
+
+form{
+	width:500px;
+	max-width:500px;
+	height:510px;
+	padding:3em 2em;
+	box-shadow:1px 2px 10px 2px #999;
+	border-radius:4px;
+}
+
+input{
+	display:block;
+	width:100%;
+	padding:10px;
+	border-radius:10px;
+	border:1px solid silver;
+	margin-bottom:1.3rem;
+	outline:none;
+	font-size:16px;
+}
+
+input:focus{
+	outline:2px solid #71c562;
+	border:none;
+}
+
+.textarea-box{
+	width:100%;
+	border:1px solid silver;
+	padding:10px;
+	border-radius:10px;
+	height:150px;
+	font-size:16px;
+	color:#888;
+}
+
+.textarea-box:focus{
+	outline:2px solid #71c562;
+	border:none;
+}
+
+button{
+	background-color:#71c562;
+	padding:8px 10px;
+	border:none;
+	border-radius:50px;
+	color:#fff;
+	font-size:16px;
+	margin-top:1.5em;
+	cursor:pointer;
+	transition:0.1s;
+}
+
+button:hover{
+	background:rgba(102,181,85,1);
+}
+>>>>>>> d2109a473b033ae43897c4788d40ee3a677c9893
